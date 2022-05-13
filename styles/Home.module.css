@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.boxCenter {
+  color: #FFF;
+}
+
+.boxCenter h1 {
+  
+}
