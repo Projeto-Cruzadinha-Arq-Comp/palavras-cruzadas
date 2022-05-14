@@ -33,11 +33,13 @@
   border: none;
   color: #FFF;
   font-weight: 600;
+  cursor: pointer;
 }
 .boxCenter p {
   width: 55vw;
   margin-top: 17px;
   margin-left: 5px;
+  cursor: pointer;
 }
 .boxCenter span{
   margin-top: 17px;
