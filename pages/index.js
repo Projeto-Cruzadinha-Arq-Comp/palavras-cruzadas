@@ -16,16 +16,10 @@ export default function Home() {
         <p>
           O objetivo do jogo é encontrar todas as palavras usando as dicas disponíveis. Conforme algumas palavra são preenchidas, algumas letras de outras palavras automaticamente aparecem, o que facilita bastante a resolução.
         </p>
-        <div>
+        <div className={styles.divBotao}>
           <button>JOGAR</button>
-        </div>
-        <div>
-          <div>
-            <Image src={Info} />
-          </div>
-          <div>
-            <p>VER REGRAS</p>
-          </div>
+          <span><Image src={Info} /></span>
+          <p>VER REGRAS</p>
         </div>
       </div>
     </div>
