@@ -19,24 +19,29 @@ export default function Cruzadinha() {
         const p1 = document.getElementById('inputP1').value
         const p2 = document.getElementById('inputP2').value
         const p3 = document.getElementById('inputP3').value
-
-        var frase3 = p1 + p2 + p3;
         
-        console.log(frase3)
+        if(p1.toUpperCase() == '' || p2.toUpperCase() == '' || p3.toUpperCase() == '') {
+            inputP1.style.border = '1px solid #B7B7B7'
+            inputP2.style.border = '1px solid #B7B7B7'
+            inputP3.style.border = '1px solid #B7B7B7'
+        }else {
+            var frase1 = [p1, p2, p3]
 
-        if(frase3.toUpperCase() == 'CPU') {
-            inputP1.style.border = '2px solid green'
-            inputP2.style.border = '2px solid green'
-            inputP3.style.border = '2px solid green'
-        }else{
-            if(frase3.length == 3) {
-                inputP1.style.border = '2px solid red'
-                inputP2.style.border = '2px solid red'
-                inputP3.style.border = '2px solid red'
-            }else {
-                inputP1.style.border = '1px solid #B7B7B7'
-                inputP2.style.border = '1px solid #B7B7B7'
-                inputP3.style.border = '1px solid #B7B7B7'
+            var verificarFrase1 = '';
+            if (frase1.length == 3) {
+                for (let pos = 0; pos < 3; pos++) {
+                    verificarFrase1 += frase1[pos]
+                    console.log(verificarFrase1)
+                        if(verificarFrase1.toUpperCase() == 'CPU') {
+                        inputP1.style.border = '2px solid green'
+                        inputP2.style.border = '2px solid green'
+                        inputP3.style.border = '2px solid green'
+                    }else{
+                            inputP1.style.border = '2px solid red'
+                            inputP2.style.border = '2px solid red'
+                            inputP3.style.border = '2px solid red'
+                    }
+                }
             }
         }
     }
