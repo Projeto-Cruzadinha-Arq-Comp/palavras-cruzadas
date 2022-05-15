@@ -54,8 +54,109 @@ export default function Cruzadinha() {
                     <input maxLength={1} max={1}  id="inputP1" onChange={() => {testeFrase()}} />
                     <input maxLength={1} max={1}  id="inputP2" onChange={() => {testeFrase()}} />
                     <input maxLength={1} max={1}  id="inputP3" onChange={() => {testeFrase()}} />
+
+                    <h1>4</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>5</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>6</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>7</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>8</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>9</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    
+                    <h1>10</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>11</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>12</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+
+                    <h1>13</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>14</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
+                    <h1>15</h1>
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+                    <input maxLength={1} max={1}   onChange={() => {testeFrase()}} />
+
                 </div>
             </div>
+
+            
         </>
     )
 }
