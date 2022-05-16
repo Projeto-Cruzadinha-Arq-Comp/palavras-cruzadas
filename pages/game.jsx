@@ -1,36 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useRouter } from 'next/router'
 import Cruzadinha from '../components/cruzadinha'
 import styles from '../styles/game.module.css'
 
-export const getServerSideProps = async (context) => {
-    context.res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
-    const query = context.query;
-    let time = null
-    let erros = null
-    return {
-        props: {
-            time: time,
-            error: erros
-        },
+export default function Game() {
+    const router = useRouter();
+    function Reiniciar() {
+        router.push('/');
     }
-}
-
-export default function Game({ time, error }) {
-    const [quantidadeErros, setQuantidadeErros] = useState(0)
-    const [limiteErros, setLimiteErros] = useState(error)
 
     return (
         <div>
             <div className={styles.container}>
-                <navbar className={styles.navbar}>
+                <nav className={styles.navbar}>
                     <div>
-                        <p>Quantidade de erros {quantidadeErros}/{limiteErros}</p>
                     </div>
                     <div>
                         <button onClick={() => { Reiniciar() }}>Reiniciar</button>
                     </div>
-                </navbar>
-                <Cruzadinha />
+                </nav>
+                <div>
+                    <Cruzadinha />
+                </div>
                 <div className={styles.informacao}>
                     <h1>Dicas</h1>
                     <div>

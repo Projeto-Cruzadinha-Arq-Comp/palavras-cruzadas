@@ -387,7 +387,7 @@ export default function Cruzadinha() {
     return (
         <>
             <div className={styles.container}>
-                <table>
+                <div>
                     <div className={styles.input13}>
                         <input maxLength={1} max={1} id="inputP13_1" onChange={() => { testeFrase() }} placeholder={'13'} />
                         <input maxLength={1} max={1} id="inputP13_2" onChange={() => { testeFrase() }} />
@@ -522,7 +522,7 @@ export default function Cruzadinha() {
                         <input maxLength={1} max={1} id="inputP4_1" onChange={() => { testeFrase() }} placeholder={'4'} />
                         <input maxLength={1} max={1} id="inputP4_2" onChange={() => { testeFrase() }} />
                     </div>
-                </table>
+                </div>
             </div>
         </>
     )

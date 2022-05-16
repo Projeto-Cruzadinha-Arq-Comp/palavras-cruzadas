@@ -10,12 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const [time, setTime] = useState(0);
-  const [erros, setErros] = useState(0);
   const router = useRouter();
 
   function redirect() {
-    router.push({ pathname: "/game", query: { time: time, erros: erros} });
+    router.push('/game');
   }
 
   return (
@@ -52,13 +50,6 @@ export default function Home() {
           <p>
             Se guie pelas dicas que estão no final da tela.
           </p>
-          <div>
-            <p>Defina suas configurações</p>
-            <div>
-              <p>Limite de erros</p>
-              <input style={{width: '100px'}} type={'number'} value={erros} onChange={(e) => { setErros(e.target.value)}}/>
-            </div>
-          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
