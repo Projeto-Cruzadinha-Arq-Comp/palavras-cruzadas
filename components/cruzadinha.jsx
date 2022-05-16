@@ -11,7 +11,7 @@ export default function Cruzadinha() {
         const inputP1e1 = document.getElementById('inputP1_1').value;
         const inputP1e2 = document.getElementById('inputP1_2').value;
         const inputP1e3 = document.getElementById('inputP1_3').value;
-        const inputP1e4 = document.getElementById('inputP1_4').value;
+        // const inputP1e4 = document.getElementById('inputP1_4').value;
         const inputP1e5 = document.getElementById('inputP1_5').value;
         const inputP1e6 = document.getElementById('inputP1_6').value;
         const inputP1e7 = document.getElementById('inputP1_7').value;
@@ -30,7 +30,7 @@ export default function Cruzadinha() {
             inputP1_1.style.border = '1px solid #B7B7B7'
             inputP1_2.style.border = '1px solid #B7B7B7'
             inputP1_3.style.border = '1px solid #B7B7B7'
-            inputP1_4.style.border = '1px solid #B7B7B7'
+            // inputP1_4.style.border = '1px solid #B7B7B7'
             inputP1_5.style.border = '1px solid #B7B7B7'
             inputP1_6.style.border = '1px solid #B7B7B7'
             inputP1_7.style.border = '1px solid #B7B7B7'
@@ -42,7 +42,7 @@ export default function Cruzadinha() {
             inputP1_13.style.border = '1px solid #B7B7B7'
             inputP1_14.style.border = '1px solid #B7B7B7'
         } else {
-            var frase1 = [inputP1e1, inputP1e2, inputP1e3, inputP1e4, inputP1e5, inputP1e6, inputP1e7, inputP1e8, inputP1e9, inputP1e10, inputP1e11,
+            var frase1 = [inputP1e1, inputP1e2, inputP1e3, inputP1e5, inputP1e6, inputP1e7, inputP1e8, inputP1e9, inputP1e10, inputP1e11,
                 inputP1e12, inputP1e13, inputP1e14]
 
             var verificarFrase1 = '';
@@ -54,7 +54,7 @@ export default function Cruzadinha() {
                         inputP1_1.style.border = '2px solid green'
                         inputP1_2.style.border = '2px solid green'
                         inputP1_3.style.border = '2px solid green'
-                        inputP1_4.style.border = '2px solid green'
+                        // inputP1_4.style.border = '2px solid green'
                         inputP1_5.style.border = '2px solid green'
                         inputP1_6.style.border = '2px solid green'
                         inputP1_7.style.border = '2px solid green'
@@ -69,7 +69,7 @@ export default function Cruzadinha() {
                         inputP1_1.style.border = '2px solid red'
                         inputP1_2.style.border = '2px solid red'
                         inputP1_3.style.border = '2px solid red'
-                        inputP1_4.style.border = '2px solid red'
+                        // inputP1_4.style.border = '2px solid red'
                         inputP1_5.style.border = '2px solid red'
                         inputP1_6.style.border = '2px solid red'
                         inputP1_7.style.border = '2px solid red'
@@ -130,28 +130,28 @@ export default function Cruzadinha() {
         //Frase 3
         const p1 = document.getElementById('input_P1').value;
         const p2 = document.getElementById('input_P2').value;
-        const p3 = document.getElementById('input_P3').value;
+        // const p3 = document.getElementById('input_P3').value;
 
-        if (p1.toUpperCase() == '' || p2.toUpperCase() == '' || p3.toUpperCase() == '') {
+        if (p1.toUpperCase() == '' || p2.toUpperCase() == '') {
             input_P1.style.border = '1px solid #B7B7B7'
             input_P2.style.border = '1px solid #B7B7B7'
-            input_P3.style.border = '1px solid #B7B7B7'
+            // input_P3.style.border = '1px solid #B7B7B7'
         } else {
-            var frase3 = [p1, p2, p3]
+            var frase3 = [p1, p2]
 
             var verificarFrase3 = '';
             if (frase3.length == 3) {
                 for (let pos = 0; pos < 3; pos++) {
                     verificarFrase3 += frase3[pos]
                     console.log(verificarFrase3)
-                    if (verificarFrase3.toUpperCase() == 'CPU') {
+                    if (verificarFrase3.toUpperCase() == 'CPU') { 
                         input_P1.style.border = '2px solid green'
                         input_P2.style.border = '2px solid green'
-                        input_P3.style.border = '2px solid green'
+                        // input_P3.style.border = '2px solid green'
                     } else {
                         input_P1.style.border = '2px solid red'
                         input_P2.style.border = '2px solid red'
-                        input_P3.style.border = '2px solid red'
+                        // input_P3.style.border = '2px solid red'
                     }
                 }
             }
