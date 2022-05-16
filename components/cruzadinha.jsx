@@ -94,7 +94,7 @@ export default function Cruzadinha() {
 
         if (inputP2e2.toUpperCase() == '' || inputP2e3.toUpperCase() == '' || inputP2e4.toUpperCase() == ''
             || inputP2e5.toUpperCase() == '' || inputP1e2I.toUpperCase() == '') {
-            
+
             inputP1_2.style.border = '1px solid #B7B7B7'
             inputP2_2.style.border = '1px solid #B7B7B7'
             inputP2_3.style.border = '1px solid #B7B7B7'
@@ -133,9 +133,9 @@ export default function Cruzadinha() {
         const p3 = document.getElementById('input_P3').value;
 
         if (p1.toUpperCase() == '' || p2.toUpperCase() == '' || p3.toUpperCase() == '') {
-             input_P1.style.border = '1px solid #B7B7B7'
-             input_P2.style.border = '1px solid #B7B7B7'
-             input_P3.style.border = '1px solid #B7B7B7'
+            input_P1.style.border = '1px solid #B7B7B7'
+            input_P2.style.border = '1px solid #B7B7B7'
+            input_P3.style.border = '1px solid #B7B7B7'
         } else {
             var frase3 = [p1, p2, p3]
 
@@ -388,27 +388,72 @@ export default function Cruzadinha() {
         <>
             <div className={styles.container}>
                 <div>
-                    <div className={styles.input13}>
-                        <input maxLength={1} max={1} id="inputP13_1" onChange={() => { testeFrase() }} placeholder={'13'} />
-                        <input maxLength={1} max={1} id="inputP13_2" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_3" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_4" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_5" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_6" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_7" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_8" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP13_9" onChange={() => { testeFrase() }} />
+                    <div style={{marginLeft: '109px'}}>
+                        <div className={styles.coupleinput3e9}>
+                            <div className={styles.input3}>
+                                <input maxLength={1} max={1} id="input_P1" onChange={() => { testeFrase() }} placeholder={'3'} />
+                                <input maxLength={1} max={1} id="input_P2" onChange={() => { testeFrase() }} />
+                                {/* apaguei a input_P3 para ser usada na U da inputP13_8*/}
+                            </div>
+
+                            <div className={styles.input9}>
+                                <input maxLength={1} max={1} id="inputP9_1" onChange={() => { testeFrase() }} placeholder={'9'} />
+                                {/* apaguei a input 9 do CS para usar o 'S' da inputP13_5*/}
+                            </div>
+                        </div>
+
+                        <div className={styles.input13}>
+                            <input maxLength={1} max={1} id="inputP13_1" onChange={() => { testeFrase() }} placeholder={'13'} />
+                            <input maxLength={1} max={1} id="inputP13_2" onChange={() => { testeFrase() }} placeholder={'15'} />
+                            <input maxLength={1} max={1} id="inputP13_3" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_4" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_5" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_6" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_7" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_8" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP13_9" onChange={() => { testeFrase() }} />
+                        </div>
+
+                        <div className={styles.input15}>
+                            {/*<input maxLength={1} max={1} id="inputP15_1" onChange={() => { testeFrase() }}  />*/}
+                            <input maxLength={1} max={1} id="inputP15_2" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_3" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_4" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_5" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_6" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_7" onChange={() => { testeFrase() }} />
+                            <input maxLength={1} max={1} id="inputP15_8" onChange={() => { testeFrase() }} />
+                        </div>
                     </div>
 
-                    <div className={styles.input9}>
-                        <input maxLength={1} max={1} id="inputP9_1" onChange={() => { testeFrase() }} placeholder={'9'} />
-                        {/* apaguei a input 9 do CS para usar o 'S' da inputP13_5*/}
+                    <div className={styles.input1}>
+                        <input maxLength={1} max={1} id="inputP1_1" onChange={() => { testeFrase() }} placeholder={'1'} />
+                        <input maxLength={1} max={1} id="inputP1_2" onChange={() => { testeFrase() }} placeholder={'2'} />
+                        <input maxLength={1} max={1} id="inputP1_3" onChange={() => { testeFrase() }} style={{marginRight: '54px'}}/>
+
+                        <input maxLength={1} max={1} id="inputP1_5" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_6" onChange={() => { testeFrase() }} placeholder={'6'} />
+                        <input maxLength={1} max={1} id="inputP1_7" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_8" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_9" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_10" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_11" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_12" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_13" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP1_14" onChange={() => { testeFrase() }} />
                     </div>
 
-                    <div className={styles.input3}>
-                        <input maxLength={1} max={1} id="input_P1" onChange={() => { testeFrase() }} placeholder={'3'} />
-                        <input maxLength={1} max={1} id="input_P2" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="input_P3" onChange={() => { testeFrase() }} />
+                    <div className={styles.couple2e6}>
+                    <div className={styles.input2}>
+                        <input maxLength={1} max={1} id="inputP2_2" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP2_3" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP2_4" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP2_5" onChange={() => { testeFrase() }} />
+                    </div>
+
+                    <div className={styles.input6}>
+                        <input maxLength={1} max={1} id="inputP6_2" onChange={() => { testeFrase() }} />
+                    </div>
                     </div>
 
                     <div className={styles.input5}>
@@ -427,15 +472,15 @@ export default function Cruzadinha() {
                     </div>
 
                     <div className={styles.input8}>
-                        <input maxLength={1} max={1} id="inputP8_1" onChange={() => { testeFrase() }} placeholder={'8'} /> 
-                         {/* apaguei a input 2 da RAM para usar o 'A' da inputP16_1*/}
+                        <input maxLength={1} max={1} id="inputP8_1" onChange={() => { testeFrase() }} placeholder={'8'} />
+                        {/* apaguei a input 2 da RAM para usar o 'A' da inputP16_1*/}
                         <input maxLength={1} max={1} id="inputP8_3" onChange={() => { testeFrase() }} />
 
                     </div>
 
                     <div className={styles.input10}>
                         {/* apaguei a input 10 da ULA para usar o 'U' da inputP5_6*/}
-                        <input maxLength={1} max={1} id="inputP10_2" onChange={() => { testeFrase() }} placeholder={'10'}/>
+                        <input maxLength={1} max={1} id="inputP10_2" onChange={() => { testeFrase() }} placeholder={'10'} />
                         {/* apaguei a input 10 da ULA para usar o 'A' da inputP16_8*/}
                     </div>
 
@@ -464,17 +509,6 @@ export default function Cruzadinha() {
                         <input maxLength={1} max={1} id="inputP14_8" onChange={() => { testeFrase() }} />
                     </div>
 
-                    <div className={styles.input15}>
-                        <input maxLength={1} max={1} id="inputP15_1" onChange={() => { testeFrase() }} placeholder={'15'} />
-                        <input maxLength={1} max={1} id="inputP15_2" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_3" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_4" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_5" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_6" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_7" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP15_8" onChange={() => { testeFrase() }} />
-                    </div>
-
                     <div className={styles.input16}>
                         <input maxLength={1} max={1} id="inputP16_1" onChange={() => { testeFrase() }} placeholder={'16'} />
                         <input maxLength={1} max={1} id="inputP16_2" onChange={() => { testeFrase() }} />
@@ -488,34 +522,6 @@ export default function Cruzadinha() {
                         <input maxLength={1} max={1} id="inputP16_10" onChange={() => { testeFrase() }} />
                         <input maxLength={1} max={1} id="inputP16_11" onChange={() => { testeFrase() }} />
                         <input maxLength={1} max={1} id="inputP16_12" onChange={() => { testeFrase() }} />
-                    </div>
-
-                    <div className={styles.input1}>
-                        <input maxLength={1} max={1} id="inputP1_1" onChange={() => { testeFrase() }} placeholder={'1'} />
-                        <input maxLength={1} max={1} id="inputP1_2" onChange={() => { testeFrase() }} placeholder={'2'} />
-                        <input maxLength={1} max={1} id="inputP1_3" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_4" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_5" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_6" onChange={() => { testeFrase() }} placeholder={'6'} />
-                        <input maxLength={1} max={1} id="inputP1_7" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_8" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_9" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_10" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_11" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_12" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_13" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP1_14" onChange={() => { testeFrase() }} />
-                    </div>
-
-                    <div className={styles.input2}>
-                        <input maxLength={1} max={1} id="inputP2_2" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP2_3" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP2_4" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP2_5" onChange={() => { testeFrase() }} />
-                    </div>
-
-                    <div className={styles.input6}>
-                        <input maxLength={1} max={1} id="inputP6_2" onChange={() => { testeFrase() }} />
                     </div>
 
                     <div className={styles.input4}>
