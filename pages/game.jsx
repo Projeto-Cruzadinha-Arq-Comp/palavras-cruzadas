@@ -1,41 +1,33 @@
 import React, { useState } from 'react'
 import Cruzadinha from '../components/cruzadinha'
-import Image from 'next/image'
 import styles from '../styles/game.module.css'
-import Clock from '../public/assets/clock.svg'
-import Countdown from 'react-countdown'
 
-export default function Game() {
-    const [quantidadeErros, setQuantidadeErros] = useState(0)
-    const [limiteErros, setLimiteErros] = useState(15)
-    const [timer, setTimer] = useState(484738)
-    const Completionist = () => <span style={{color: 'red'}}>Seu tempo acabou</span>;
-
-    function Reiniciar() {
-        setTimer(484738)
-        setQuantidadeErros(0)
+export const getServerSideProps = async (context) => {
+    context.res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
+    const query = context.query;
+    let time = null
+    let erros = null
+    return {
+        props: {
+            time: time,
+            error: erros
+        },
     }
+}
+
+export default function Game({ time, error }) {
+    const [quantidadeErros, setQuantidadeErros] = useState(0)
+    const [limiteErros, setLimiteErros] = useState(error)
 
     return (
         <div>
             <div className={styles.container}>
                 <navbar className={styles.navbar}>
                     <div>
-                        <p>Temporizador</p>
-                        <div>
-                            <Image src={Clock} />
-                        </div>
-                        <div>
-                        <Countdown date={Date.now() + timer}>
-                            <Completionist />
-                        </Countdown>
-                        </div>
-                    </div>
-                    <div>
                         <p>Quantidade de erros {quantidadeErros}/{limiteErros}</p>
                     </div>
                     <div>
-                        <button onClick={() => {Reiniciar()}}>Reiniciar</button>
+                        <button onClick={() => { Reiniciar() }}>Reiniciar</button>
                     </div>
                 </navbar>
                 <Cruzadinha />
