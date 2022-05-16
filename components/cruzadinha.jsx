@@ -6,15 +6,6 @@ export default function Cruzadinha() {
     const [p2, setP2] = useState('')
     const [p3, setP3] = useState('')
 
-    function teste(props) {
-        console.log(props)
-        if (props == 'A' || props == 'a') {
-            console.log('correto')
-        } else {
-            console.log('incorreto')
-        }
-    }
-
     function testeFrase() {
         // frase 1
         const inputP1e1 = document.getElementById('inputP1_1').value;
@@ -52,7 +43,7 @@ export default function Cruzadinha() {
             inputP1_14.style.border = '1px solid #B7B7B7'
         } else {
             var frase1 = [inputP1e1, inputP1e2, inputP1e3, inputP1e4, inputP1e5, inputP1e6, inputP1e7, inputP1e8, inputP1e9, inputP1e10, inputP1e11,
-                inputP1e12, inputP1e13]
+                inputP1e12, inputP1e13, inputP1e14]
 
             var verificarFrase1 = '';
             if (frase1.length == 14) {
@@ -68,6 +59,7 @@ export default function Cruzadinha() {
                         inputP1_6.style.border = '2px solid green'
                         inputP1_7.style.border = '2px solid green'
                         inputP1_8.style.border = '2px solid green'
+                        inputP1_9.style.border = '2px solid green'
                         inputP1_10.style.border = '2px solid green'
                         inputP1_11.style.border = '2px solid green'
                         inputP1_12.style.border = '2px solid green'
@@ -94,33 +86,37 @@ export default function Cruzadinha() {
         }
 
         //Frase 2
+        const inputP1e2I = document.getElementById('inputP1_2').value;
         const inputP2e2 = document.getElementById('inputP2_2').value;
         const inputP2e3 = document.getElementById('inputP2_3').value;
         const inputP2e4 = document.getElementById('inputP2_4').value;
         const inputP2e5 = document.getElementById('inputP2_5').value;
 
         if (inputP2e2.toUpperCase() == '' || inputP2e3.toUpperCase() == '' || inputP2e4.toUpperCase() == ''
-            || inputP2e5.toUpperCase() == '') {
-
+            || inputP2e5.toUpperCase() == '' || inputP1e2I.toUpperCase() == '') {
+            
+            inputP1_2.style.border = '1px solid #B7B7B7'
             inputP2_2.style.border = '1px solid #B7B7B7'
             inputP2_3.style.border = '1px solid #B7B7B7'
             inputP2_4.style.border = '1px solid #B7B7B7'
             inputP2_5.style.border = '1px solid #B7B7B7'
 
         } else {
-            var frase2 = [inputP2e2, inputP2e3, inputP2e4, inputP2e5]
+            var frase2 = [inputP1e2I, inputP2e2, inputP2e3, inputP2e4, inputP2e5]
 
             var verificarFrase2 = '';
-            if (frase2.length == 4) {
-                for (let pos = 0; pos < 4; pos++) {
+            if (frase2.length == 5) {
+                for (let pos = 0; pos < 5; pos++) {
                     verificarFrase2 += frase2[pos]
                     console.log(verificarFrase2)
-                    if (verificarFrase2.toUpperCase() == 'PROM') {
+                    if (verificarFrase2.toUpperCase() == 'EPROM') {
+                        inputP1_2.style.border = '2px solid green'
                         inputP2_2.style.border = '2px solid green'
                         inputP2_3.style.border = '2px solid green'
                         inputP2_4.style.border = '2px solid green'
                         inputP2_5.style.border = '2px solid green'
                     } else {
+                        inputP1_2.style.border = '2px solid red'
                         inputP2_2.style.border = '2px solid red'
                         inputP2_3.style.border = '2px solid red'
                         inputP2_4.style.border = '2px solid red'
@@ -137,9 +133,9 @@ export default function Cruzadinha() {
         const p3 = document.getElementById('input_P3').value;
 
         if (p1.toUpperCase() == '' || p2.toUpperCase() == '' || p3.toUpperCase() == '') {
-            // inputP1.style.border = '1px solid #B7B7B7'
-            // inputP2.style.border = '1px solid #B7B7B7'
-            // inputP3.style.border = '1px solid #B7B7B7'
+             input_P1.style.border = '1px solid #B7B7B7'
+             input_P2.style.border = '1px solid #B7B7B7'
+             input_P3.style.border = '1px solid #B7B7B7'
         } else {
             var frase3 = [p1, p2, p3]
 
@@ -149,30 +145,32 @@ export default function Cruzadinha() {
                     verificarFrase3 += frase3[pos]
                     console.log(verificarFrase3)
                     if (verificarFrase3.toUpperCase() == 'CPU') {
-                        inputP1.style.border = '2px solid green'
-                        inputP2.style.border = '2px solid green'
-                        inputP3.style.border = '2px solid green'
+                        input_P1.style.border = '2px solid green'
+                        input_P2.style.border = '2px solid green'
+                        input_P3.style.border = '2px solid green'
                     } else {
-                        inputP1.style.border = '2px solid red'
-                        inputP2.style.border = '2px solid red'
-                        inputP3.style.border = '2px solid red'
+                        input_P1.style.border = '2px solid red'
+                        input_P2.style.border = '2px solid red'
+                        input_P3.style.border = '2px solid red'
                     }
                 }
             }
         }
 
         // frase 4
+        const inputP4e1 = document.getElementById('inputP4_1').value;
         const inputP4e2 = document.getElementById('inputP4_2').value;
-        const inputP4e3 = document.getElementById('inputP4_3').value;
+        const inputP2e5I = document.getElementById('inputP2_5').value;
 
 
-        if (inputP4e2.toUpperCase() == '' || inputP4e3.toUpperCase() == '') {
+        if (inputP4e1.toUpperCase() == '' || inputP4e2.toUpperCase() == '' || inputP2e5I.toUpperCase() == '') {
 
+            inputP4_1.style.border = '1px solid #B7B7B7'
             inputP4_2.style.border = '1px solid #B7B7B7'
-            inputP4_3.style.border = '1px solid #B7B7B7'
+            inputP2_5.style.border = '1px solid #B7B7B7'
 
         } else {
-            var frase4 = [inputP4e2, inputP4e3]
+            var frase4 = [inputP4e1, inputP4e2, inputP2e5I]
 
             var verificarFrase4 = '';
             if (frase4.length == 3) {
@@ -180,11 +178,13 @@ export default function Cruzadinha() {
                     verificarFrase4 += frase4[pos]
                     console.log(verificarFrase4)
                     if (verificarFrase4.toUpperCase() == 'ROM') {
+                        inputP4_1.style.border = '2px solid green'
                         inputP4_2.style.border = '2px solid green'
-                        inputP4_3.style.border = '2px solid green'
+                        inputP2_5.style.border = '2px solid green'
                     } else {
+                        inputP4_1.style.border = '2px solid red'
                         inputP4_2.style.border = '2px solid red'
-                        inputP4_3.style.border = '2px solid red'
+                        inputP2_5.style.border = '2px solid red'
                     }
                 }
             }
@@ -289,6 +289,99 @@ export default function Cruzadinha() {
                 }
             }
         }
+        // frase 8
+        const inputP8e1 = document.getElementById('inputP8_1').value;
+        const inputP16e1I = document.getElementById('inputP16_1').value;
+        const inputP8e3 = document.getElementById('inputP8_3').value;
+
+
+        if (inputP8e1.toUpperCase() == '' || inputP16e1I.toUpperCase() == '' || inputP8e3.toUpperCase() == '') {
+
+            inputP8_1.style.border = '1px solid #B7B7B7'
+            inputP16_1.style.border = '1px solid #B7B7B7'
+            inputP8_3.style.border = '1px solid #B7B7B7'
+
+        } else {
+            var frase8 = [inputP8e1, inputP16e1I, inputP8e3]
+            console.log(frase8)
+            var verificarFrase8 = '';
+            if (frase8.length == 3) {
+                for (let pos = 0; pos < 3; pos++) {
+                    verificarFrase8 += frase8[pos]
+                    console.log(verificarFrase8)
+                    if (verificarFrase8.toUpperCase() == 'RAM') {
+                        inputP8_1.style.border = '2px solid green'
+                        inputP16_1.style.border = '2px solid green'
+                        inputP8_3.style.border = '2px solid green'
+                    } else {
+                        inputP8_1.style.border = '2px solid red'
+                        inputP16_1.style.border = '2px solid red'
+                        inputP8_3.style.border = '2px solid red'
+                    }
+                }
+            }
+        }
+        // frase 9
+
+        const inputP9e1 = document.getElementById('inputP9_1').value;
+        const inputP13e5I = document.getElementById('inputP13_5').value;
+
+        if (inputP9e1.toUpperCase() == '' || inputP13e5I.toUpperCase() == '') {
+
+            inputP9_1.style.border = '1px solid #B7B7B7'
+            inputP13_5.style.border = '1px solid #B7B7B7'
+
+        } else {
+            var frase9 = [inputP9e1, inputP13e5I]
+
+            var verificarFrase9 = '';
+            if (frase9.length == 2) {
+                for (let pos = 0; pos < 2; pos++) {
+                    verificarFrase9 += frase9[pos]
+                    console.log(verificarFrase9)
+                    if (verificarFrase9.toUpperCase() == 'CS') {
+                        inputP9_1.style.border = '2px solid green'
+                        inputP13_5.style.border = '2px solid green'
+                    } else {
+                        inputP9_1.style.border = '2px solid red'
+                        inputP13_5.style.border = '2px solid red'
+                    }
+                }
+            }
+        }
+        // frase 10
+
+        const inputP5e2I = document.getElementById('inputP5_6').value;
+        const inputP10e2 = document.getElementById('inputP10_2').value;
+        const inputP16e8I = document.getElementById('inputP16_8').value;
+
+
+        if (inputP5e2I.toUpperCase() == '' || inputP10e2.toUpperCase() == '' || inputP16e8I.toUpperCase() == '') {
+
+            inputP5_6.style.border = '1px solid #B7B7B7'
+            inputP10_2.style.border = '1px solid #B7B7B7'
+            inputP16_8.style.border = '1px solid #B7B7B7'
+
+        } else {
+            var frase10 = [inputP5e2I, inputP10e2, inputP16e8I]
+            console.log(frase10)
+            var verificarFrase10 = '';
+            if (frase10.length == 3) {
+                for (let pos = 0; pos < 3; pos++) {
+                    verificarFrase10 += frase10[pos]
+                    console.log(verificarFrase10)
+                    if (verificarFrase10.toUpperCase() == 'ULA') {
+                        inputP5_6.style.border = '2px solid green'
+                        inputP10_2.style.border = '2px solid green'
+                        inputP16_8.style.border = '2px solid green'
+                    } else {
+                        inputP5_6.style.border = '2px solid red'
+                        inputP10_2.style.border = '2px solid red'
+                        inputP16_8.style.border = '2px solid red'
+                    }
+                }
+            }
+        }
     }
 
     return (
@@ -309,7 +402,7 @@ export default function Cruzadinha() {
 
                     <div className={styles.input9}>
                         <input maxLength={1} max={1} id="inputP9_1" onChange={() => { testeFrase() }} placeholder={'9'} />
-                        <input maxLength={1} max={1} id="inputP9_2" onChange={() => { testeFrase() }} />
+                        {/* apaguei a input 9 do CS para usar o 'S' da inputP13_5*/}
                     </div>
 
                     <div className={styles.input3}>
@@ -334,16 +427,16 @@ export default function Cruzadinha() {
                     </div>
 
                     <div className={styles.input8}>
-                        <input maxLength={1} max={1} id="inputP8_1" onChange={() => { testeFrase() }} placeholder={'8'} />
-                        <input maxLength={1} max={1} id="inputP8_2" onChange={() => { testeFrase() }} />
+                        <input maxLength={1} max={1} id="inputP8_1" onChange={() => { testeFrase() }} placeholder={'8'} /> 
+                         {/* apaguei a input 2 da RAM para usar o 'A' da inputP16_1*/}
                         <input maxLength={1} max={1} id="inputP8_3" onChange={() => { testeFrase() }} />
 
                     </div>
 
                     <div className={styles.input10}>
-                        <input maxLength={1} max={1} id="inputP10_1" onChange={() => { testeFrase() }} placeholder={'10'} />
-                        <input maxLength={1} max={1} id="inputP10_2" onChange={() => { testeFrase() }} />
-                        <input maxLength={1} max={1} id="inputP10_3" onChange={() => { testeFrase() }} />
+                        {/* apaguei a input 10 da ULA para usar o 'U' da inputP5_6*/}
+                        <input maxLength={1} max={1} id="inputP10_2" onChange={() => { testeFrase() }} placeholder={'10'}/>
+                        {/* apaguei a input 10 da ULA para usar o 'A' da inputP16_8*/}
                     </div>
 
                     <div className={styles.input11}>
