@@ -45,7 +45,7 @@ export default function Home() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            As palavras podem ser escritas da esquerda para direita, da direita para esquerda, de cima para baixo ou de baixo para cima. Fique atento ao tempo!
+            As palavras podem ser escritas da esquerda para direita, da direita para esquerda, de cima para baixo ou de baixo para cima.
           </p>
           <p>
             Se guie pelas dicas que estão no final da tela.

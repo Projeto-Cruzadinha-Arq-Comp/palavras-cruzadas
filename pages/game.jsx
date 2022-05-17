@@ -14,9 +14,10 @@ export default function Game() {
             <div className={styles.container}>
                 <nav className={styles.navbar}>
                     <div>
+                        <h1>PALAVRA CRUZADA</h1>
                     </div>
                     <div>
-                        <button onClick={() => { Reiniciar() }}>Reiniciar</button>
+                        <button onClick={() => { Reiniciar() }}>Sair</button>
                     </div>
                 </nav>
                 <div>
